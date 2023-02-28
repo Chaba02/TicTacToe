@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shantell Sans', sans-serif;
+    background-color: #FCFAF9;
+    color: #333333;
+    --winning-blocks: #DF8B53;
+}
+
+.gameContainer{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+h1{
+    font-size: 3.2rem;
+    margin: auto;
+    color: #333333;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    box-shadow: 0 0 0 1px;
+    line-height: 75px;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    color: #333333;
+}
+
+.gameBoardContainer{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.troupedesc{
+    width: 33.3333%;
+}
+
+#troupe{
+    font-size: 9rem;
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: 10px auto;
+}
+
+button{
+    padding: 10px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #333333;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--winning-blocks);
+    color: white;
+}
+
+.score{
+    border: 1px solid --winning-blocks;
+    background-color: var(--winning-blocks);
+    color: white;
+    padding: 10px;
+    width: 225px;
+    margin: 20px auto;
+    border-radius: 2px;
+}

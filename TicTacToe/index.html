@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gameContainer">
+        <h1 class="player__text">Tic Tac Toe</h1>
+        <button class="restart_btn">Restart</button>
+
+        <div class="gameBoardContainer">
+            <div class="troupedesc">
+                <h1 id="troupe">X</h1>
+                <p>I will be your Xing</p>
+            </div>
+            <div class="gameboard">
+                <div class="cell" cellIndex="0"></div>
+                <div class="cell" cellIndex="1"></div>
+                <div class="cell" cellIndex="2"></div>
+                <div class="cell" cellIndex="3"></div>
+                <div class="cell" cellIndex="4"></div>
+                <div class="cell" cellIndex="5"></div>
+                <div class="cell" cellIndex="6"></div>
+                <div class="cell" cellIndex="7"></div>
+                <div class="cell" cellIndex="8"></div>
+            </div>
+            <div class="troupedesc">
+                <h1 id="troupe">O</h1>
+                <p>I will be your Oueen</p>
+            </div>
+        </div>
+        <h2 id="statusText" class="status"></h2>
+        <h2 id="scoreText" class="score"></h2>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
